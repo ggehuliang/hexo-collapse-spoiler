@@ -1,6 +1,6 @@
 {
   "name": "hexo-tag-collapse-spoiler",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Hexo tag plugin for collapse spoiler",
   "main": "index.js",
   "scripts": {

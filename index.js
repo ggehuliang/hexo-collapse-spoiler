@@ -10,7 +10,7 @@ hexo.extend.tag.register(
     <button class='collapse-ctrl' onclick='collapseToggle(this)'><span class='collapse-hint-show'>${hintShow}</span><span class='collapse-hint-hide'>${hintHide}</span></button>
     <div class='collapse-content'><div class='content-flex${
       hexo.config.collapse?.border ? " collapse-border" : ""
-    }'><div>
+    }'><div style='width:100%'>
         ${hexo.render.renderSync({
           text: content,
           engine: "markdown",
@@ -32,7 +32,7 @@ hexo.extend.tag.register(
       <a class='collapse-ctrl' href="javascript:void (0);" onclick='collapseToggle(this)'><span class='collapse-hint-show'>${hintShow}</span><span class='collapse-hint-hide'>${hintHide}</span></a>
       <div class='collapse-content'><div class='content-flex${
         hexo.config.collapse?.border ? " collapse-border" : ""
-      }'><div>
+      }'><div style='width:100%'>
           ${hexo.render.renderSync({
             text: content,
             engine: "markdown",
@@ -52,7 +52,7 @@ hexo.extend.tag.register(
     const hintHide = args[1] || hexo.config.collapse?.hint_hide || "Hide";
     return `<div class='collapse'>
       <div class='collapse-ctrl collapse-cardtitle' onclick='collapseToggle(this)'><div class='collapse-hint-ico'>&gt</div><span class='collapse-hint-show'>${hintShow}</span><span class='collapse-hint-hide'>${hintHide}</span></div>
-      <div class='collapse-content'><div class='content-flex collapse-cardborder'><div>
+      <div class='collapse-content'><div class='content-flex collapse-cardborder'><div style='width:100%'>
           ${hexo.render.renderSync({
             text: content,
             engine: "markdown",
